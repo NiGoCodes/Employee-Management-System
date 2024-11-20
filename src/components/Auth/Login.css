@@ -1,0 +1,74 @@
+/* Darker Spooky Gradient Background */
+.halloween-bg {
+    background: linear-gradient(to bottom, #141414, #1a1a2e); /* Darker shades of black and deep purple */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Subtle Darker Glow Effect */
+  .halloween-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.9) 100%);
+    pointer-events: none;
+  }
+  
+  /* Card Styling - Darker with intense shadows */
+  .halloween-card {
+    background: #1a1a2e; /* Darker slate blue */
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(255, 94, 0, 0.6); /* Darker orange glow */
+  }
+  
+  /* Spooky Text Styling */
+  .halloween-text {
+    font-family: 'Creepster', cursive;
+    text-shadow: 0px 4px 12px rgba(255, 136, 0, 0.8); /* Darker glow effect */
+  }
+  
+  .halloween-subtext {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.1em;
+    color: #a3a3d1; /* Slightly darker grayish purple */
+  }
+  
+  /* Inputs and Button Styling - Darker and more intense hover effects */
+  .halloween-button:hover {
+    box-shadow: 0px 6px 20px rgba(136, 43, 255, 0.8);
+    transform: scale(1.05);
+  }
+  /* Dark Background with Texture */
+.halloween-bg-dark {
+    background: radial-gradient(circle, #2d2d34, #1c1c22);
+    border: 2px solid #ff751a; /* Subtle glowing border */
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Spooky Font */
+  .halloween-text {
+    font-family: 'Creepster', cursive;
+    color: #ff751a;
+    text-shadow: 0 4px 6px rgba(255, 94, 0, 0.6);
+  }
+  
+  /* Halloween Color Palette */
+  .text-halloween-orange {
+    color: #ff751a;
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(90deg, #ff751a, #800080);
+  }
+  
+  /* Button Effects */
+  button:hover {
+    background: linear-gradient(90deg, #800080, #ff751a);
+    box-shadow: 0 4px 10px rgba(255, 117, 26, 0.5), 0 0 20px rgba(128, 0, 128, 0.6);
+    cursor: pointer;
+  }
+  

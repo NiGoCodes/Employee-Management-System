@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  color: #fff;
+}
+body{
+  background-color: #111;
+}
+#tasklist::-webkit-scrollbar{
+    background-color: transparent;
+    height: 5px;
+}
+#tasklist::-webkit-scrollbar-thumb{
+  background-color: rgb(143, 143, 143);
+  border-radius: 50px;
+}
+/* Cool-Tone Gradient Background */
+.bg-gradient-to-br {
+  background: linear-gradient(135deg, #1e293b, #1a5564);
+}
+
+/* Colors for Text */
+.text-cool-blue {
+  color: #5ac8fa; /* A cool blue shade */
+}
+
+.text-light-teal {
+  color: #3dd5a6; /* A light teal shade */
+}
+
+/* Button Styles */
+.bg-gradient-to-r {
+  background: linear-gradient(90deg, #3dd5a6, #5ac8fa);
+}
+
+/* Transitions and Shadows */
+button:hover {
+  background: linear-gradient(90deg, #5ac8fa, #3dd5a6);
+  box-shadow: 0 4px 15px rgba(58, 200, 246, 0.5);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Custom Colors for Dark Theme */
+.from-dark-blue {
+  color: #1e293b; /* Dark blue */
+}
+
+.to-deep-teal {
+  color: #1a5564; /* Deep teal */
+}
+/* Dark Background Gradient */
+.bg-gradient-to-b {
+  background: linear-gradient(to bottom, #121212, #1f1f1f); /* Dark gray tones */
+}
+
+/* Text Colors */
+.text-light-gray {
+  color: #cfcfcf; /* Light gray for contrast */
+}
+
+.text-cool-teal {
+  color: #3db1a7; /* Subtle teal for accents */
+}
+
+/* Button Gradient */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #14524a, #3db1a7); /* Dark teal to cool teal */
+}
+
+/* Shadows */
+.shadow-lg {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.hover\:shadow-xl:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Transitions and Interactions */
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #3db1a7, #14524a); /* Reversed gradient */
+}
+
+/* Dark Gray Palette */
+.from-dark-gray {
+  background-color: #121212; /* Deep black-gray */
+}
+
+.to-deep-gray {
+  background-color: #1f1f1f; /* Slightly lighter */
+}
+
+.from-dark-teal {
+  background-color: #14524a; /* Dark teal */
+}
+
+.to-cool-teal {
+  background-color: #3db1a7; /* Cool teal */
+}
