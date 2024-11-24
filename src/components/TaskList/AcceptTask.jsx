@@ -2,7 +2,7 @@ import React ,{useContext , useState }from 'react'
 import { AuthContext } from '../../context/AuthProvider';
 
 
-const AcceptTask = ({ data }) => {
+const AcceptTask = ({ data ,ct, setCt}) => {
  
   // console.log(data)
   return (
@@ -28,7 +28,7 @@ const AcceptTask = ({ data }) => {
           </button>
           <button
             className='bg-red-600 text-white rounded font-medium py-1 px-2 text-xs hover:bg-red-700 transition'
-            
+            onClick={()=>setCt(ct+1)}  
           >
             Mark as Failed
           </button>

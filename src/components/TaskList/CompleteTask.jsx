@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CompleteTask = ({ data }) => {
+const CompleteTask = ({ data , val }) => {
   return (
     <div className="flex-shrink-0 h-full w-[300px] p-5 bg-blue-600 rounded-xl">
       <div className="flex justify-between items-center">
@@ -14,7 +14,7 @@ const CompleteTask = ({ data }) => {
       <div className="mt-6">
         {/* Only show 'Complete' button if the task is not yet completed */}
         {!data.completed && (
-          <button className="w-full bg-green-600 text-white rounded font-medium py-1 px-2 text-xs hover:bg-green-700 transition">
+          <button className="w-full bg-green-600 text-white rounded font-medium py-1 px-2 text-xs hover:bg-green-700 transition" onClick={() => val.taskCounts.completed++}>
             Mark as Completed
           </button>
         )}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TaskListNumbers = ({ data }) => {
+const TaskListNumbers = ({ data , ct}) => {
   return (
     <div className='flex mt-10 justify-between gap-5'>
         
@@ -10,7 +10,7 @@ const TaskListNumbers = ({ data }) => {
         </div>
         
         <div className='rounded-xl w-[45%] py-6 px-9 bg-[#388E3C]'>
-            <h2 className='text-3xl font-bold text-white'>{data.taskCounts.completed}</h2>
+            <h2 className='text-3xl font-bold text-white'>{ct}</h2>
             <h3 className='text-xl mt-0.5 font-medium text-white'>Completed Task</h3>
         </div>
         
