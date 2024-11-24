@@ -3,7 +3,12 @@ import { AuthContext } from '../../context/AuthProvider';
 
 
 const AcceptTask = ({ data ,ct, setCt}) => {
- 
+  const [isButtonVisible, setIsButtonVisible] = useState(true);
+
+  // Handler to hide the button
+  const handleClick = () => {
+    setIsButtonVisible(false);
+  };
   // console.log(data)
   return (
     <div className='flex-shrink-0 h-full w-[300px] p-5 bg-gray-800 rounded-xl'>
@@ -28,7 +33,10 @@ const AcceptTask = ({ data ,ct, setCt}) => {
           </button>
           <button
             className='bg-red-600 text-white rounded font-medium py-1 px-2 text-xs hover:bg-red-700 transition'
-            onClick={()=>setCt(ct+1)}  
+            onClick={() => {
+              setCt(ct + 1);
+              handleClick;
+            }}
           >
             Mark as Failed
           </button>
